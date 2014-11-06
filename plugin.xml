@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='utf-8'?>
-<plugin id="org.binarypark.cordova.plugins.version" version="0.0.1" xmlns="http://apache.org/cordova/ns/plugins/1.0" xmlns:android="http://schemas.android.com/apk/res/android">
+<plugin id="org.binarypark.cordova.plugins.version" version="0.0.3" xmlns="http://apache.org/cordova/ns/plugins/1.0" xmlns:android="http://schemas.android.com/apk/res/android">
     <name>getAppVersion</name>
 	<description>Read the version of the App from config.xml and make it available in js</description>
 	<license>MIT</license>
 	<keywords>cordova,appversion,version</keywords>
 	<repo>https://github.com/Binarypark/cordova_app_version_plugin.git</repo>
-	<issues>https://github.com/Binarypark/cordova_app_version_plugin/issues</issues>
+	<issue>https://github.com/Binarypark/cordova_app_version_plugin/issues</issue>
 
 	<hook type="before_prepare" src="hooks/before_prepare/setVersionOnApp.js" />
 
@@ -16,4 +16,15 @@
 	<engines>
 		<engine name="cordova" version=">=3.0.0" />
 	</engines>
+	
+	<platform name="android"></platform>
+	<platform name="amazon-fireos"></platform>
+    <platform name="ubuntu"></platform>
+    <platform name="ios"></platform>
+    <platform name="blackberry10"></platform>
+    <platform name="wp7"></platform>
+    <platform name="wp8"></platform>
+    <platform name="windows8"></platform>
+    <platform name="windows"></platform>
+	<platform name="browser"></platform>
 </plugin>
