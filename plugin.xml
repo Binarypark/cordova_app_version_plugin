@@ -3,6 +3,9 @@
     <name>getAppVersion</name>
 	<description>Read the version of the App from config.xml and make it available in js</description>
 	<license>MIT</license>
+	<keywords>cordova,appversion,version</keywords>
+	<repo>https://github.com/Binarypark/cordova_app_version_plugin.git</repo>
+	<issues>https://github.com/Binarypark/cordova_app_version_plugin/issues</issues>
 
 	<hook type="before_prepare" src="hooks/before_prepare/setVersionOnApp.js" />
 
