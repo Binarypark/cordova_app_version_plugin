@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<plugin id="org.binarypark.cordova.plugins.version" version="0.0.3" xmlns="http://apache.org/cordova/ns/plugins/1.0" xmlns:android="http://schemas.android.com/apk/res/android">
+<plugin id="org.binarypark.cordova.plugins.version" version="0.0.4" xmlns="http://apache.org/cordova/ns/plugins/1.0" xmlns:android="http://schemas.android.com/apk/res/android">
     <name>getAppVersion</name>
 	<description>Read the version of the App from config.xml and make it available in js</description>
 	<license>MIT</license>

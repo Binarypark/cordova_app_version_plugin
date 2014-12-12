@@ -11,7 +11,7 @@ module.exports = function(context) {
 	version = cfg.version();
 
 	fs.writeFileSync(
-		context.opts.plugin.dir + '\\www\\getAppVersion.js',
+		context.opts.plugin.dir + '/www/getAppVersion.js',
 		'exports.getAppVersion = function() { return "' + version + '";};'
 	);
 };
