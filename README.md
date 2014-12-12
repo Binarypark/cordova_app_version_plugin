@@ -5,12 +5,18 @@ This plugin reads the version of your app that you put in config.xml and makes i
 
 **This plugin should work on any platform since it does not rely on any native code.**
 
+## Changelog
+* 0.1.0
+  * Added namespace `version` to not override other plugins see [issue 2](https://github.com/Binarypark/cordova_app_version_plugin/issues/2) <br/> Call to retrieve the appVersion is now: `window.cordova.plugins.version.getAppVersion()`
+* 0.0.4
+  * Changed directory separators from `\\`to `/` see [issue 1](https://github.com/Binarypark/cordova_app_version_plugin/issues/1)
+
 ## Installation
 ### Cordova CLI
 ```
 cordova plugin add org.binarypark.cordova.plugins.version
 ```
-The plugin will then be accessable via `window.cordova.plugins.getAppVersion()`.
+The plugin will then be accessable via `window.cordova.plugins.version.getAppVersion()`.
 
 ## Usage
 ### config.xml example
@@ -19,7 +25,7 @@ The plugin will then be accessable via `window.cordova.plugins.getAppVersion()`.
 <widget id="my.app.id" version="1.5.0">...</widget>
 
 ```
-A call `window.cordova.plugins.getAppVersion()` will return the version `"1.5.0"`.
+A call `window.cordova.plugins.version.getAppVersion()` will return the version `"1.5.0"`.
 
 ## How does it work?
 The plugins uses the `before_prepare` hook to generate the `getAppVersion.js` file which will be added to the App on build. The `getAppVersion.js` file which comes with the plugin is just a placeholder, as it should be available when the plugin is installed.

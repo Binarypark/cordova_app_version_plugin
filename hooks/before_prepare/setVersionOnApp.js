@@ -12,6 +12,6 @@ module.exports = function(context) {
 
 	fs.writeFileSync(
 		context.opts.plugin.dir + '/www/getAppVersion.js',
-		'exports.getAppVersion = function() { return "' + version + '";};'
+		'module.exports.getAppVersion = function() { return "' + version + '";};'
 	);
 };
