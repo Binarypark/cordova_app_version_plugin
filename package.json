@@ -1,6 +1,6 @@
 {
   "name": "cordova_app_version_plugin",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "description": "Read the version of the App from config.xml and make it available in js",
   "cordova": {
     "id": "org.binarypark.cordova.plugins.version",

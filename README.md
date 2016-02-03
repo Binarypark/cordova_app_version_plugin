@@ -6,7 +6,7 @@ This plugin reads the version of your app that you put in config.xml and makes i
 **This plugin should work on any platform since it does not rely on any native code.**
 
 ## Changelog
-* 0.2.1
+* 0.2.2
   * updated `before_prepare` hook to work with `cordova@>5.0.0`
 * 0.1.0
   * Added namespace `version` to not override other plugins see [issue 2](https://github.com/Binarypark/cordova_app_version_plugin/issues/2) <br/> Call to retrieve the appVersion is now: `window.cordova.plugins.version.getAppVersion()`
