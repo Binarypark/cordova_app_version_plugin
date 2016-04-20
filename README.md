@@ -6,6 +6,9 @@ This plugin reads the version of your app that you put in config.xml and makes i
 **This plugin should work on any platform since it does not rely on any native code.**
 
 ## Changelog
+* 0.2.3
+  * switched from plain `fs` to `q-io` for better promise handling
+  * fixed error under `cordova@>5.0.0` when adding platform and expected directory structure does not exist
 * 0.2.2
   * updated `before_prepare` hook to work with `cordova@>5.0.0`
 * 0.1.0
@@ -16,8 +19,10 @@ This plugin reads the version of your app that you put in config.xml and makes i
 ## Installation
 ### Cordova CLI
 ```
+npm install q-io
 cordova plugin add cordova_app_version_plugin
 ```
+
 The plugin will then be accessable via `window.cordova.plugins.version.getAppVersion()`.
 
 ## Usage
