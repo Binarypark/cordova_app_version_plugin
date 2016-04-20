@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<plugin id="cordova_app_version_plugin" version="0.2.3" xmlns="http://apache.org/cordova/ns/plugins/1.0" xmlns:android="http://schemas.android.com/apk/res/android">
+<plugin id="cordova_app_version_plugin" version="0.2.5" xmlns="http://apache.org/cordova/ns/plugins/1.0" xmlns:android="http://schemas.android.com/apk/res/android">
     <name>getAppVersion</name>
     <description>Read the version of the App from config.xml and make it available in js</description>
     <license>MIT</license>
@@ -8,7 +8,6 @@
     <issue>https://github.com/Binarypark/cordova_app_version_plugin/issues</issue>
 
     <hook type="before_prepare" src="hooks/before_prepare/setVersionOnApp.js" />
-		<hook type="after_plugin_install" src="hooks/after_plugin_install/printInfoMessage.js" />
 
     <js-module name="getAppVersion" src="www/getAppVersion.js">
         <clobbers target="cordova.plugins.version" />
@@ -17,4 +16,8 @@
     <engines>
         <engine name="cordova" version=">=3.0.0" />
     </engines>
+	
+	<info>
+		Don't forget to run 'npm install q-io'.
+	</info>
 </plugin>

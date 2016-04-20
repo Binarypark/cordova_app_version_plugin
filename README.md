@@ -6,7 +6,7 @@ This plugin reads the version of your app that you put in config.xml and makes i
 **This plugin should work on any platform since it does not rely on any native code.**
 
 ## Changelog
-* 0.2.3
+* 0.2.5
   * switched from plain `fs` to `q-io` for better promise handling
   * fixed error under `cordova@>5.0.0` when adding platform and expected directory structure does not exist
 * 0.2.2
