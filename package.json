@@ -3,7 +3,7 @@
   "version": "0.2.3",
   "description": "Read the version of the App from config.xml and make it available in js",
   "cordova": {
-    "id": "org.binarypark.cordova.plugins.version",
+    "id": "cordova_app_version_plugin",
     "platforms": [
       "android",
       "amazon-fireos",
