@@ -48,5 +48,8 @@
   "bugs": {
     "url": "https://github.com/Binarypark/cordova_app_version_plugin/issues"
   },
-  "homepage": "https://github.com/Binarypark/cordova_app_version_plugin#readme"
+  "homepage": "https://github.com/Binarypark/cordova_app_version_plugin#readme",
+  "dependencies": {
+    "q-io": "~1.13.2"
+  },
 }
