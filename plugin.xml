@@ -8,6 +8,7 @@
     <issue>https://github.com/Binarypark/cordova_app_version_plugin/issues</issue>
 
     <hook type="before_prepare" src="hooks/before_prepare/setVersionOnApp.js" />
+		<hook type="after_plugin_install" src="hooks/after_plugin_install/printInfoMessage.js" />
 
     <js-module name="getAppVersion" src="www/getAppVersion.js">
         <clobbers target="cordova.plugins.version" />
