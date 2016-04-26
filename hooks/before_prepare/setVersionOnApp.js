@@ -47,7 +47,7 @@ module.exports = function(context) {
 
 			return fs.write(
 				fs.join(fullPath, 'getAppVersion.js'),
-				'cordova.define("org.binarypark.cordova.plugins.version.getAppVersion", function(require, exports, module) { module.exports.getAppVersion = function() { return "' + version + '";};});'
+				'cordova.define("cordova_app_version_plugin.getAppVersion", function(require, exports, module) { module.exports.getAppVersion = function() { return "' + version + '";};});'
 			);
 		}
 

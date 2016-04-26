@@ -1,6 +1,6 @@
 {
   "name": "cordova_app_version_plugin",
-  "version": "0.2.5",
+  "version": "0.2.6",
   "description": "Read the version of the App from config.xml and make it available in js",
   "cordova": {
     "id": "cordova_app_version_plugin",
