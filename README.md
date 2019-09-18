@@ -6,6 +6,8 @@ This plugin reads the version of your app that you put in config.xml and makes i
 **This plugin should work on any platform since it does not rely on any native code.**
 
 ## Changelog
+* 0.2.7
+  * Added support for `cordova@>9.0.0`. Thanks to [@lyudmil](https://github.com/Binarypark/cordova_app_version_plugin/pull/4) 
 * 0.2.6
   * switched from plain `fs` to `q-io` for better promise handling
   * fixed error under `cordova@>5.0.0` when adding platform and expected directory structure does not exist
