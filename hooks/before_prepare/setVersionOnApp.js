@@ -2,8 +2,8 @@
 module.exports = function(context) {
 
 	var fs = require('q-io/fs');
-	var q = context.requireCordovaModule('q');
-	var semver = context.requireCordovaModule('semver');
+	var q = require('q');
+	var semver = require('semver');
 
 	var ConfigParser = context.requireCordovaModule('cordova-lib').configparser;
 	var cfg = new ConfigParser(fs.join(context.opts.projectRoot, 'config.xml'));
